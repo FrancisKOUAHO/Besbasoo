@@ -107,8 +107,8 @@
       </span>
 
             <div class="flex justify-center">
-              <img class="mt-11 desktop-view" src="../components/images/logo.png" width="65px" style="object-fit: cover;">
-              <img class="mt-11 mobile-logo mb-10" src="../components/images/logo-2.png" width="65px" style="object-fit: cover;">
+<!--              <img class="mt-11 desktop-view" src="../components/images/logo.png" width="65px" style="object-fit: cover;">
+              <img class="mt-11 mobile-logo mb-10" src="../components/images/logo-2.png" width="65px" style="object-fit: cover;">-->
             </div>
            <!-- desktop footer -->
             <div class="flex flex-wrap justify-between desktop-view footer-text-color">
