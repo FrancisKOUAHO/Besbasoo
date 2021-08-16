@@ -10,7 +10,7 @@
     <div
       class="inline-flex items-start justify-center w-full h-64 px-12 pt-9 pb-14 bg-white rounded-bl rounded-br"
     >
-      <img class="flex-1 h-full" src="../images/image 5.png" />
+      <img class="flex-1 h-full" src="../../assets/images/image 5.png" />
     </div>
   </div>
 </template>

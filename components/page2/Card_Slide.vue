@@ -6,7 +6,7 @@
     <div class="relative">
       <img
         class="w-30 h-25 absolute left-1 top-20"
-        src="../images/image 5.png"
+        src="../../assets/images/image 5.png"
       />
 
       <p class="w-80 h-14   text-xl mx-2">

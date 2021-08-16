@@ -32,7 +32,7 @@
             <div class="justify-center h-40 m-view-padd">
               <img
                 class="mt-2 lg:ml-5"
-                src="../images/image-14.png"
+                src="../../assets/images/image-14.png"
               />
             </div>
             <div class="p-4">
