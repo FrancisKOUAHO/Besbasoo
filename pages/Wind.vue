@@ -9,7 +9,7 @@
         <button class="pa-2 px-5 border-2 border-gray-500">Trier par</button>
       </div>
     </div>
-    <div v-for="(a,index) in array"  class="flex-auto md:flex  flex-warp w-full">
+    <div v-for="(a,index) in array"  class="flex-auto md:flex flex-warp w-full">
       <Card /> <Card /><Card /><Card /> <Card />
     </div>
     <Pagination class="py-10 text-right mobile-view-pag" />

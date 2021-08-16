@@ -5,7 +5,7 @@
     <div class="flex items-center justify-center ">
       <div class=" w-full  sm:w-full lg:w-4.5/5 py-1 px-1">
         <div class="bg-white   rounded-md  border-2 border-gray-100 overflow-hidden">
-         <!-- desktop view button -->
+          <!-- desktop view button -->
           <div class="flex   bottom-1 w-full desktop-view-b ">
             <div class="  w-1/5 "></div>
             <div
@@ -27,7 +27,7 @@
               Vendu et expédié par Besbasoo
             </div>
           </div>
-         <!-- end button-->
+          <!-- end button-->
           <div class="wrapper-div">
             <div class="justify-center h-40 m-view-padd">
               <img
@@ -36,24 +36,43 @@
               />
             </div>
             <div class="p-4">
-              <p  class="uppercase tracking-wide text-md font-bold text-black-700 leading-5 fontrambla capitalize">
+              <p class="uppercase tracking-wide text-md font-bold text-black-700 leading-5 fontrambla capitalize">
                 Sculpture Femme Africaine Watusi nue - ANZENGRUBE...
               </p>
 
               <p>
-                <div class="flex">
-                    <div class="flex items-center mt-2 mb-4">
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                      <svg class="mx-1 w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <div class="mt-0.5">(25)</div>
+              <div class="flex">
+                <div class="flex items-center mt-2 mb-4">
+                  <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                  </svg>
+                  <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                  </svg>
+                  <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                  </svg>
+                  <svg class="mx-1 w-4 h-4 fill-current text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                  </svg>
+                  <svg class="mx-1 w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                  </svg>
                 </div>
-              </p>
+                <div class="mt-0.5">(25)</div>
+              </div>
               <p class="mobile-view-price mb-2">
-                  <span class="text-black-900 text-xl font-bold "> 65,90€</span>
+                <span class="text-black-900 text-xl font-bold "> 65,90€</span>
               </p>
 
               <p class="  tracking-wide text-md font-bold text-black-700 fontrambla">
@@ -62,7 +81,7 @@
                   en France métropolitaine et DOM</span
                 >
               </p>
-              <p class="  tracking-wide text-xm font-bold text-black-700 fontrambla" >
+              <p class="  tracking-wide text-xm font-bold text-black-700 fontrambla">
                 Délais : <span class="  font-normal "> 3-4 jours ouvrés</span>
               </p>
               <p class="  tracking-wide text-xm font-bold text-black-700 fontrambla">
@@ -85,7 +104,7 @@
               </div>
             </div>
           </div>
-           <!-- mobile view button -->
+          <!-- mobile view button -->
           <div class="flex   bottom-1 w-full mobile-view-b ">
             <div class=" w-10/12"></div>
             <div
@@ -107,7 +126,7 @@
               Vendu et expédié par Besbasoo
             </div>
           </div>
-         <!-- end button-->
+          <!-- end button-->
 
         </div>
       </div>
@@ -115,34 +134,37 @@
   </div>
 </template>
 <style scoped>
-   .fontrambla{
-     font-family: Rambla;
-   }
-    @media only screen and (max-width: 658px) {
-     .wrapper-div{
-       display:flex;
-     }
+.fontrambla {
+  font-family: Rambla;
+}
 
-     .desktop-view-price{
-         display:none;
-     }
-     .desktop-view-b{
-       display:none;
-     }
+@media only screen and (max-width: 658px) {
+  .wrapper-div {
+    display: flex;
+  }
 
-     .m-view-padd{
-       padding-top: 50px;
-     }
+  .desktop-view-price {
+    display: none;
+  }
 
-    }
+  .desktop-view-b {
+    display: none;
+  }
 
-    @media only screen and (min-width: 658px) {
-      .mobile-view-price{
-        display:none;
-      }
-      .mobile-view-b{
-       display:none;
-     }
+  .m-view-padd {
+    padding-top: 50px;
+  }
 
-    }
+}
+
+@media only screen and (min-width: 658px) {
+  .mobile-view-price {
+    display: none;
+  }
+
+  .mobile-view-b {
+    display: none;
+  }
+
+}
 </style>

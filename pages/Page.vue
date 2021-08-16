@@ -7,7 +7,7 @@
         Les offres du moment
       </div>
     </div>
-    <div class="flex-auto md:flex my-10 flex-warp w-full">
+    <div class="flex-auto md:flex justify-center my-10 flex-warp w-full">
       <Cardslides v-for="i in 4" v-bind:key="i" />
     </div>
 
