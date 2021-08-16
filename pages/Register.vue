@@ -97,17 +97,17 @@
 
 
       <button  class="w-full py-3 bg-yellow-500 text-white rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent shadow-lg mobile-text-color  creer-m-c"> Créer mon compte </button>
-      <hr class="border-divider" style="margin:0px auto; margin-top:20px; width:50%; border: 1px solid #787878; border-radius: 5px; " />
+      <hr class="border-divider" style="margin: 20px auto 0;width:50%; border: 1px solid #787878; border-radius: 5px; " />
 
 
-      <h2 style="font-family: Rambla;font-style: normal;font-weight: bold;font-size: 30px;line-height: 37px;color: #101829;" class="text-black text-lg text-left font-weight-bold mobile-text-color">Déjà membre?  </h2>
+      <h2 style="font-family: Rambla,serif;font-style: normal;font-weight: bold;font-size: 30px;line-height: 37px;color: #101829;" class="text-black text-lg text-left font-weight-bold mobile-text-color">Déjà membre?  </h2>
       <button  class="border-2 border-gray-600 w-full py-3 bg-gray text-black rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-white-500 focus:border-transparent shadow-lg mobile-text-color se-conn">Se connecter</button>
       <span class="text-black text-left mobile-text-color mobile-text-color" style="font-family: Rambla;font-style: normal;font-weight: normal;font-size: 15px;line-height: 18px;">
         Vous souhaitez en savoir plus sur la gestion de vos données personnelles ? Consultez la<br> politique de confidentialité accessible depuis le tien suivant :<a class="mobile-text-color" style="text-decoration: underline;" href="#"> Protection de la vie privée </a>
       </span>
 
             <div class="flex justify-center">
-<!--              <img class="mt-11 desktop-view" src="@/assets/images/logo.png" width="65px" style="object-fit: cover;" alt="logo">-->
+<!--              <img class="mt-11 desktop-view" src="@/assets/images/logo-1.png" width="65px" style="object-fit: cover;" alt="logo">-->
               <img class="mt-11 mobile-logo mb-10" src="~/assets/images/logo-2.png" width="65px" style="object-fit: cover;" alt="logo">
             </div>
            <!-- desktop footer -->
