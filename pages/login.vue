@@ -75,8 +75,8 @@
       </span>
 
             <div class="flex justify-center">
-<!--              <img class="mt-11 desktop-view" src="@/assets/images/logo.png" width="65px" style="object-fit: cover;" alt="logo">-->
-              <img class="mt-11 mobile-logo mb-10" src="@/assets/images/logo-2.png" width="65px" style="object-fit: cover;" alt="logo">
+              <img class="mt-11 desktop-view" src="~/assets/images/logo.png" width="65px" style="object-fit: cover;" alt="logo">
+              <img class="mt-11 mobile-logo mb-10" src="~/assets/images/logo-2.png" width="65px" style="object-fit: cover;" alt="logo">
             </div>
            <!-- desktop footer -->
             <div class="flex flex-wrap justify-between desktop-view footer-text-color">
