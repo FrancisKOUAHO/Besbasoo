@@ -40,11 +40,16 @@
                 <span class="absolute top-0 right-0 inline-block w-2 h-2 transform translate-x-1/2 -translate-y-1/2  rounded-full" style="background-color:orange"></span>
              </span>
 
-
-
             <div class=" hidden sm:block ">
-              <p class=" text-xs font-medium ml-2 text-white">
-                Mon compte
+              <p v-if="loginOk" class="text-xs font-medium ml-2 text-white">
+                <nuxt-link :to="{name: 'profile'}">
+                  Mon compte
+                </nuxt-link>
+              </p>
+              <p v-else class=" text-xs font-medium ml-2 text-white">
+                <nuxt-link :to="{name: 'login'}">
+                  Identifiez-vous
+                </nuxt-link>
               </p>
             </div>
           </div>
@@ -66,7 +71,7 @@
                   fill="#FFFEFE"
                 />
               </svg>
-              <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-50 transform translate-x-1/2 -translate-y-1/2  rounded-full" style="background-color:orange">9</span>
+              <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-50 transform translate-x-1/2 -translate-y-1/2  rounded-full" style="background-color:orange">0</span>
             </span>
 
             <div class=" hidden sm:block ">
