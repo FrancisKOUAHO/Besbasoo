@@ -125,7 +125,7 @@
       </div>
     </div>
     <footer class="  pt-0  " style="background-color:#03347E">
-      <div class="max-w-full m-auto   flex flex-wrap text-center ">
+      <div class="max-w-full m-auto   flex flex-wrap justify-center text-center ">
         <!-- w-24 md:w-auto lg:w-1/3 -->
         <div class="md:w-1/3 lg:w-2/2 py-4 px-4">
           <!-- Col Title -->
@@ -274,12 +274,9 @@
         </div>
       </div>
       <center>
-        <a
-          href="#"
-          class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700 center"
-        >
+        <nuxt-link :to="{name: 'login'}" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700 center">
           Vous avez un compte ? Se connecter
-        </a>
+        </nuxt-link>
       </center>
       <!-- Copyright Bar -->
       <div class="pt-2">
@@ -288,8 +285,8 @@
           style="background-color:#101829"
         >
           <div
-            class="   md:grid md:grid-cols-2  pb-5 px-3 m-auto pt-5 
-            text-gray-400  
+            class="   md:grid md:grid-cols-2  pb-5 px-3 m-auto pt-5
+            text-gray-400
               "
           >
             <div

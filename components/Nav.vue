@@ -15,9 +15,11 @@
           </svg>
         </button>
       </div>
-      <div class="   text-white-500 ml-4  sm:ml-8  font-rambla  ">
-        <span class="font-bold text-3xl  text-white">Besbasoo</span>
-      </div>
+      <nuxt-link :to="{name: 'index'}">
+        <div class="   text-white-500 ml-4  sm:ml-8  font-rambla  ">
+          <span class="font-bold text-3xl  text-white">Besbasoo</span>
+        </div>
+      </nuxt-link>
       <div class="flex absolute right-3 md:right-10   ">
         <div class="p-2 md:w-35 ">
           <div
@@ -25,18 +27,20 @@
           >
           <span class="relative inline-block ml-8">
 
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <nuxt-link to="#">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                 <path
                   d="M13 0C5.81855 0 0 5.81855 0 13C0 20.1815 5.81855 26 13 26C20.1815 26 26 20.1815 26 13C26 5.81855 20.1815 0 13 0ZM13 5.03226C15.5476 5.03226 17.6129 7.09758 17.6129 9.64516C17.6129 12.1927 15.5476 14.2581 13 14.2581C10.4524 14.2581 8.3871 12.1927 8.3871 9.64516C8.3871 7.09758 10.4524 5.03226 13 5.03226ZM13 23.0645C9.92298 23.0645 7.16573 21.6702 5.32056 19.4895C6.30605 17.6339 8.23508 16.3548 10.4839 16.3548C10.6097 16.3548 10.7355 16.3758 10.856 16.4125C11.5375 16.6327 12.2504 16.7742 13 16.7742C13.7496 16.7742 14.4677 16.6327 15.144 16.4125C15.2645 16.3758 15.3903 16.3548 15.5161 16.3548C17.7649 16.3548 19.694 17.6339 20.6794 19.4895C18.8343 21.6702 16.077 23.0645 13 23.0645Z"
                   fill="#FFFEFE"
                 />
               </svg>
+              </nuxt-link>
                 <span
                   class="absolute top-0 right-0 inline-block w-2 h-2 transform translate-x-1/2 -translate-y-1/2  rounded-full"
                   style="background-color:orange"></span>
