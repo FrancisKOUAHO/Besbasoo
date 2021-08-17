@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Nav class="ma-0" />
     <div class="flex justify-between  py-5 px-3">
       <div class="text-xl font-bold font-rambla">
         Résultats (518)
@@ -21,9 +20,7 @@
             RETOURNER EN HAUT
           </a>
       </div>
-
     </div>
-    <Footer class="ma-0" />
   </div>
 </template>
 <script>

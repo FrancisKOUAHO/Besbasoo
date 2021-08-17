@@ -28,6 +28,10 @@ export default {
   plugins: [
   ],
 
+  axios: {
+    baseURL: 'http://localhost:4000/api'
+  },
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 

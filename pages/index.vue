@@ -1,6 +1,5 @@
 <template>
   <div class="bg-gray-200">
-    <Nav class="ma-0"/>
     <Slider/>
     <div class=" py-5 px-10 flex justify-between ">
       <div class="text-xl font-bold font-rambla">
@@ -66,8 +65,6 @@
         </a>
       </div>
     </div>
-
-    <Footer class="ma-0"/>
   </div>
 </template>
 <script>
