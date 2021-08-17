@@ -53,7 +53,7 @@
                 </nuxt-link>
               </p>
               <p v-else class=" text-xs font-medium ml-2 text-white">
-                <nuxt-link :to="{name: 'login'}">
+                <nuxt-link :to="{name: 'signIn'}">
                   Identifiez-vous
                 </nuxt-link>
               </p>

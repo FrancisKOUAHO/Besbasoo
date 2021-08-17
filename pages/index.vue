@@ -77,6 +77,18 @@ import SmallCard from "../components/page2/SmallCard.vue";
 import SecondSlider from "../components/page2/SecondSlider.vue";
 
 export default {
-  components: {Cardslides, Slider, SecondSlider, SmallCard}
+  components: {Cardslides, Slider, SecondSlider, SmallCard},
+  head() {
+    return {
+      title: 'Acceuil | Besbasoo',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Ma description personnalisée'
+        }
+      ]
+    }
+  }
 };
 </script>
