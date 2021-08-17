@@ -1,14 +1,14 @@
 <template>
   <div class="bg-gray-200">
-    <Nav class="ma-0" />
-    <Slider />
+    <Nav class="ma-0"/>
+    <Slider/>
     <div class=" py-5 px-10 flex justify-between ">
       <div class="text-xl font-bold font-rambla">
         Les offres du moment
       </div>
     </div>
     <div class="flex-auto md:flex justify-center my-10 flex-warp w-full">
-      <Cardslides v-for="i in 4" v-bind:key="i" />
+      <Cardslides v-for="i in 4" v-bind:key="i"/>
     </div>
 
     <div
@@ -38,15 +38,15 @@
         En savoir plus
       </button>
     </div>
-    <br />
-    <br />
+    <br/>
+    <br/>
     <div class="flex justify-between  py-5 px-10">
       <div class="text-xl font-bold font-rambla">
         Sélectionner spécialement pour vous
       </div>
     </div>
     <div class="flex-warp md:px-5 justify-between text-center py-10">
-      <SecondSlider v-for="i in 5" v-bind:key="i" />
+      <SecondSlider v-for="i in 5" v-bind:key="i"/>
     </div>
 
     <div class="flex justify-between  py-5 px-10">
@@ -55,19 +55,19 @@
       </div>
     </div>
     <div class="flex-warp px-5 justify-between text-center py-10">
-      <SmallCard v-for="i in 10" v-bind:key="i" />
+      <SmallCard v-for="i in 10" v-bind:key="i"/>
     </div>
 
     <div class=" flex justify-center text-xl w-full   mb-10  text-center py-10 px-3 font-rambla">
       <div>
-         <img class="ml-20" src="../assets/images/2-arraow.png">
-          <a href="#" class="my-3 duration-700 fontrambla">
-            RETOURNER EN HAUT
-          </a>
+        <img class="ml-20" src="../assets/images/2-arraow.png">
+        <a href="#" class="my-3 duration-700 fontrambla">
+          RETOURNER EN HAUT
+        </a>
       </div>
     </div>
 
-    <Footer class="ma-0" />
+    <Footer class="ma-0"/>
   </div>
 </template>
 <script>
@@ -75,7 +75,8 @@ import Slider from "../components/page2/Slider.vue";
 import Cardslides from "../components/page2/Card_Slide.vue";
 import SmallCard from "../components/page2/SmallCard.vue";
 import SecondSlider from "../components/page2/SecondSlider.vue";
+
 export default {
-  components: { Cardslides, Slider, SecondSlider, SmallCard }
+  components: {Cardslides, Slider, SecondSlider, SmallCard}
 };
 </script>

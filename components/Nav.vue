@@ -11,7 +11,7 @@
             viewBox="0 0 16 18"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
           </svg>
         </button>
       </div>
@@ -37,7 +37,9 @@
                   fill="#FFFEFE"
                 />
               </svg>
-                <span class="absolute top-0 right-0 inline-block w-2 h-2 transform translate-x-1/2 -translate-y-1/2  rounded-full" style="background-color:orange"></span>
+                <span
+                  class="absolute top-0 right-0 inline-block w-2 h-2 transform translate-x-1/2 -translate-y-1/2  rounded-full"
+                  style="background-color:orange"></span>
              </span>
 
             <div class=" hidden sm:block ">
@@ -71,7 +73,9 @@
                   fill="#FFFEFE"
                 />
               </svg>
-              <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-50 transform translate-x-1/2 -translate-y-1/2  rounded-full" style="background-color:orange">0</span>
+              <span
+                class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-50 transform translate-x-1/2 -translate-y-1/2  rounded-full"
+                style="background-color:orange">0</span>
             </span>
 
             <div class=" hidden sm:block ">
@@ -106,7 +110,7 @@
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <rect width="73" height="73" fill="url(#pattern0)" />
+          <rect width="73" height="73" fill="url(#pattern0)"/>
           <defs>
             <pattern
               id="pattern0"
@@ -114,7 +118,7 @@
               width="1"
               height="1"
             >
-              <use xlink:href="#image0" transform="scale(0.002)" />
+              <use xlink:href="#image0" transform="scale(0.002)"/>
             </pattern>
             <image
               id="image0"
@@ -140,6 +144,6 @@
       </button>
     </div>
 
-    <Button-nav class=" ml-1" />
+    <Button-nav class=" ml-1"/>
   </nav>
 </template>
