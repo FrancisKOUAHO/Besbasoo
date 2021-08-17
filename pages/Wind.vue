@@ -15,8 +15,9 @@
     <Pagination class="py-10 text-right mobile-view-pag" />
     <div class=" flex justify-center text-xl w-full   mb-10  text-center py-10 px-3 font-rambla">
       <div>
-         <img class="ml-20" src="../assets/images/arraow.png" alt="arraow">
+
           <a href="#" class="my-3 duration-700 fontrambla">
+            <img class="ml-20" src="../assets/images/arraow.png" alt="arraow" width="30">
             RETOURNER EN HAUT
           </a>
       </div>
