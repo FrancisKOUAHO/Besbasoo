@@ -146,14 +146,16 @@
     </div>
     <completely/>
     <productcharacteristics/>
+    <customeropinion/>
   </section>
 </template>
 
 <script>
 import completely from '/components/page3/Completely.vue'
-import productcharacteristics from '/components/page3/productcharacteristics.vue'
+import productcharacteristics from '/components/page3/Productcharacteristics.vue'
+import customeropinion from '/components/page3/Customeropinion.vue'
 export default {
-  components: {completely, productcharacteristics},
+  components: {completely, productcharacteristics, customeropinion},
   data() {
     return {
       favorited: false,
