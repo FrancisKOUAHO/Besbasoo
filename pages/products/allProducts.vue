@@ -16,7 +16,7 @@
       <div>
 
           <a href="#" class="my-3 duration-700 fontrambla">
-            <img class="ml-20" src="../../assets/images/arraow.png" alt="arraow" width="30">
+            <img class="ml-20" src="~/assets/images/arraow.png" alt="arraow" width="30">
             RETOURNER EN HAUT
           </a>
       </div>
