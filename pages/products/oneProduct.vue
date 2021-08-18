@@ -449,7 +449,6 @@ export default {
       .buy-now:hover {
         background: #ff9a24;
         color: white;
-
       }
     }
 
