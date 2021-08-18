@@ -16,7 +16,7 @@
       <div>
 
           <a href="#" class="my-3 duration-700 fontrambla">
-            <img class="ml-20" src="../assets/images/arraow.png" alt="arraow" width="30">
+            <img class="ml-20" src="../../assets/images/arraow.png" alt="arraow" width="30">
             RETOURNER EN HAUT
           </a>
       </div>
@@ -24,8 +24,8 @@
   </div>
 </template>
 <script>
-  import Card from '../components/page1/Card.vue'
-  import Pagination from '../components/page1/Pagination.vue'
+  import Card from '../../components/page1/Card.vue'
+  import Pagination from '../../components/page1/Pagination.vue'
   export default {
      components:{Card,Pagination},
      data(){

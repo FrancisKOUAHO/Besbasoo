@@ -168,6 +168,7 @@
 </template>
 <script>
 module.exports = {
+  layout: 'nothing',
   data: function () {
     return {
       show: true,
