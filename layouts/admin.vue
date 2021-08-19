@@ -55,7 +55,7 @@
                 class="rounded-full overflow-hidden border-2  w-10 h-10 flex justify-center items-center | hover:border-white focus:outline-none focus:border-white"
                 @click="isOpen1 = true"
               >
-              <img src="/logo-1.png" alt="User's avatar">
+              <img src="~assets/images/logo-1.png" alt="User's avatar">
               </button>
               <div v-if="isOpen1" class="fixed inset-0 w-full h-screen z-20 bg-black opacity-25"
                    @click="isOpen1 = false"></div>
