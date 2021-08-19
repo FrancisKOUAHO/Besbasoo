@@ -103,15 +103,6 @@
         </p>
       </div>
     </div>
-    <div class=" flex justify-center text-xl w-full mb-10  text-center px-3 font-rambla">
-      <div style="margin: -2rem;">
-        <a href="#" class="my-3 duration-700 fontrambla">
-          <img class="ml-20" src="~/assets/images/2-arraow.png" alt="arraow" width="30">
-          RETOURNER EN HAUT
-        </a>
-      </div>
-    </div>
-
   </div>
 </template>
 
