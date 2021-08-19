@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full  bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900"
+    class="w-full  bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900 slider-background"
     style=" height: 494px;"
   >
     <div class="mySlides w-full text-center">
@@ -82,7 +82,7 @@
         </center>
       </div>
     </div>
-    <!-- 
+    <!--
     <div class="mySlides w-full">
       <q>I have not failed. I've just found 10,000 ways that won't work.</q>
     </div> -->
@@ -126,19 +126,21 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+
+.slider-background{
+  background: url("~/assets/images/Fond.png");
+}
+
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-
   background-color: #787878;
   top: 50%;
   width: auto;
-
   padding: 16px;
   color: #fff;
-
   font-size: 25px;
   border-radius: 0 3px 3px 0;
   user-select: none;

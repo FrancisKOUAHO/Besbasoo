@@ -11,7 +11,7 @@
     </div>
 
     <div
-      class="w-full relative bg-gradient-to-r  from-gray-900 via-gray-900 to-gray-900"
+      class="w-full relative bg-gradient-to-r  from-gray-900 via-gray-900 to-gray-900 background-Besbasoo"
       style=" height: 494px;"
     >
       <!-- <img
@@ -89,3 +89,10 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.background-Besbasoo {
+  background: url('~/assets/images/image.png');
+}
+
+</style>
