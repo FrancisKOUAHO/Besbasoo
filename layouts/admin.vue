@@ -102,7 +102,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .font-family-karla {
   font-family: Rambla,serif;
 }
