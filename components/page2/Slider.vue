@@ -129,7 +129,7 @@ export default {
 <style scoped>
 
 .slider-background{
-  background: url("~/assets/images/Fond.png");
+  background: url("~/assets/images/fond.png");
 }
 
 .prev,
