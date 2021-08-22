@@ -171,6 +171,18 @@ export default {
       animating: false
     };
   },
+  head() {
+    return {
+      title: 'oneProducts | Besbasoo',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Ma description personnalisée'
+        }
+      ]
+    }
+  },
   computed: {
     iconClasses() {
       return {

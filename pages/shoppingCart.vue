@@ -139,7 +139,19 @@
 
 <script>
 export default {
-  name: "shoppingCart"
+  name: "shoppingCart",
+  head() {
+    return {
+      title: 'Panier d\'achat | Besbasoo',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Ma description personnalisée'
+        }
+      ]
+    }
+  }
 }
 </script>
 

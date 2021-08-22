@@ -78,7 +78,7 @@ export default {
 
 .customer-opinion {
   margin: auto;
-  padding: 1rem;
+  padding: 3rem;
   font-family: Rambla, serif;
 
   h1 {

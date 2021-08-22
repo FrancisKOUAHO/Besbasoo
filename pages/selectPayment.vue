@@ -113,7 +113,19 @@
 
 <script>
 export default {
-  name: "selectPayment"
+  name: "selectPayment",
+  head() {
+    return {
+      title: 'Mode de paiement | Besbasoo',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Ma description personnalisée'
+        }
+      ]
+    }
+  }
 }
 </script>
 

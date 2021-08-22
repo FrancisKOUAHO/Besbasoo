@@ -32,7 +32,19 @@
        return{
           array: [1,2,3,4,5],
        }
-     }
+     },
+    head() {
+      return {
+        title: 'allProducts | Besbasoo',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Ma description personnalisée'
+          }
+        ]
+      }
+    }
 
   }
 </script>
