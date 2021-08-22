@@ -61,10 +61,9 @@
           </div>
         </div>
         <div class="p-2 md:w-35 ">
-          <div
-            class="flex items-center p-0 bg-orange-200 rounded-lg shadow-xs cursor-pointer hover:bg-orange-500 hover:text-gray-100"
-          >
-          <span class="relative inline-block">
+         <router-link :to="{name: 'shoppingCart'}">
+           <div class="flex items-center p-0 bg-orange-200 rounded-lg shadow-xs cursor-pointer hover:bg-orange-500 hover:text-gray-100">
+            <span class="relative inline-block">
               <svg
                 width="29"
                 height="26"
@@ -82,12 +81,13 @@
                 style="background-color:orange">0</span>
             </span>
 
-            <div class=" hidden sm:block ">
-              <p class=" text-xs font-medium ml-2 text-white">
-                Panier
-              </p>
-            </div>
-          </div>
+             <div class=" hidden sm:block ">
+               <p class=" text-xs font-medium ml-2 text-white">
+                 Panier
+               </p>
+             </div>
+           </div>
+         </router-link>
         </div>
       </div>
     </div>

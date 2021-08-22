@@ -205,17 +205,16 @@ export default {
   justify-content: center;
 
   .box-picture {
-    width: 32%;
+    width: 50%;
     margin: 1rem auto;
     border: 1px solid black;
   }
 
-  @media only screen and (max-width: $mediaMinWidth) {
+  @media only screen and (max-width: $mobilMediaMinWidth) {
     .picture-secondes {
       display: none;
     }
   }
-
 
   .picture-principal {
     display: flex;
@@ -224,15 +223,15 @@ export default {
     border: 1px solid black;
     width: 30%;
 
-    @media only screen and (max-width: $mediaMinWidth) {
+    @media only screen and (max-width: $mobilMediaMinWidth) {
       width: 98%;
-      padding:4rem;
+      padding: 4rem;
     }
 
 
     .cercle {
       position: relative;
-      top: 13rem;
+      top: 15rem;
       left: 8rem;
       width: 60px;
       height: 60px;
@@ -242,7 +241,7 @@ export default {
       box-shadow: 1px 1px 1px;
 
 
-      @media only screen and (max-width: $mediaMinWidth) {
+      @media only screen and (max-width: $mobilMediaMinWidth) {
         position: relative;
         top: 6.5rem;
         left: 4rem;
@@ -341,7 +340,7 @@ export default {
     margin-left: 2rem;
     padding: 1rem;
 
-    @media only screen and (max-width: $mediaMinWidth) {
+    @media only screen and (max-width: $mobilMediaMinWidth) {
       width: 98%;
       border: 1px solid black;
       padding: 1rem;
@@ -415,7 +414,7 @@ export default {
     margin-left: 3rem;
     padding: 1rem;
 
-    @media only screen and (max-width: $mediaMinWidth) {
+    @media only screen and (max-width: $mobilMediaMinWidth) {
       width: 98%;
       margin-left: 0rem;
     }
@@ -464,7 +463,7 @@ export default {
       margin: 1rem 2rem 2rem 2rem;
 
 
-      @media only screen and (max-width: $mediaMinWidth) {
+      @media only screen and (max-width: $mobilMediaMinWidth) {
         .group-button-price {
           margin: 2rem 2rem 2rem 2rem;
         }

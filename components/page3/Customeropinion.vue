@@ -92,7 +92,7 @@ export default {
     margin: 1rem;
     flex-wrap: wrap;
 
-    @media only screen and (max-width: $mediaMinWidth) {
+    @media only screen and (max-width: $mobilMediaMinWidth) {
       .group-reviews{
         width: 100%;
       }
@@ -124,7 +124,7 @@ export default {
       padding: 1rem;
       margin-left: 3rem;
 
-      @media only screen and (max-width: $mediaMinWidth) {
+      @media only screen and (max-width: $mobilMediaMinWidth) {
         .customer-reviews{
           width: none;
         }
@@ -181,7 +181,7 @@ export default {
   .comment:hover {
     background: #ff9a24;
     color: white;
-    @media only screen and (max-width: $mediaMinWidth) {
+    @media only screen and (max-width: $mobilMediaMinWidth) {
       .comment:hover{
         background: #ff9a24;
         color: white;
