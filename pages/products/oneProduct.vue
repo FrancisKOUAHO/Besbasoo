@@ -147,7 +147,7 @@
     <completely/>
     <productcharacteristics/>
     <customeropinion/>
-    <div class=" flex justify-center text-xl w-full mb-10  text-center px-3 font-rambla">
+    <div class=" flex justify-center text-xl w-full mb-10  text-center px-3 font-rambla ml-auto mr-auto">
       <div>
         <a href="#" class="my-3 duration-700 fontrambla">
           <img class="ml-20" src="~/assets/images/2-arraow.png" alt="arraow" width="30">
@@ -210,12 +210,25 @@ export default {
     border: 1px solid black;
   }
 
+  @media only screen and (max-width: $mediaMinWidth) {
+    .picture-secondes {
+      display: none;
+    }
+  }
+
+
   .picture-principal {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
     width: 30%;
+
+    @media only screen and (max-width: $mediaMinWidth) {
+      width: 98%;
+      padding:4rem;
+    }
+
 
     .cercle {
       position: relative;
@@ -227,6 +240,13 @@ export default {
       border: 1px solid black;
       background: white;
       box-shadow: 1px 1px 1px;
+
+
+      @media only screen and (max-width: $mediaMinWidth) {
+        position: relative;
+        top: 6.5rem;
+        left: 4rem;
+      }
 
       .heart {
         margin-left: 0.9rem;
@@ -321,6 +341,13 @@ export default {
     margin-left: 2rem;
     padding: 1rem;
 
+    @media only screen and (max-width: $mediaMinWidth) {
+      width: 98%;
+      border: 1px solid black;
+      padding: 1rem;
+      margin: 1rem;
+    }
+
     h1 {
       font-family: Rambla, serif;
       font-weight: bold;
@@ -388,6 +415,11 @@ export default {
     margin-left: 3rem;
     padding: 1rem;
 
+    @media only screen and (max-width: $mediaMinWidth) {
+      width: 98%;
+      margin-left: 0rem;
+    }
+
     .payement-price {
       display: flex;
       justify-content: space-between;
@@ -429,7 +461,15 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 1rem auto;
+      margin: 1rem 2rem 2rem 2rem;
+
+
+      @media only screen and (max-width: $mediaMinWidth) {
+        .group-button-price {
+          margin: 2rem 2rem 2rem 2rem;
+        }
+      }
+
 
       .add-cart {
         padding: 0.5rem;
