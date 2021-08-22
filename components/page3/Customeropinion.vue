@@ -114,11 +114,8 @@ export default {
 
 <style lang="scss">
 .customer-opinion {
-  width: 1350px;
-  height: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
+  margin: auto;
+  padding: 3rem;
   font-family: Rambla, serif;
 
   h1 {
@@ -135,8 +132,6 @@ export default {
     .customer-opinion-reviews {
       display: flex;
       flex-direction: column;
-      width: 287px;
-      height: 300px;
       padding: 1rem;
 
       .vote {
@@ -214,8 +209,6 @@ export default {
     background: #ff9a24;
     color: white;
   }
-
-
 }
 
 </style>

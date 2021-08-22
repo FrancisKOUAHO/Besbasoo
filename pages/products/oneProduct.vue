@@ -162,6 +162,7 @@
 import completely from '/components/page3/Completely.vue'
 import productcharacteristics from '/components/page3/Productcharacteristics.vue'
 import customeropinion from '/components/page3/Customeropinion.vue'
+
 export default {
   components: {completely, productcharacteristics, customeropinion},
   data() {
@@ -200,14 +201,12 @@ export default {
 .section-oneProduct {
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem 1rem;
-  width: 1403px;
-  height: 473px;
+  margin: 3rem auto;
+  justify-content: center;
 
   .box-picture {
-    width: 58px;
-    height: 58px;
-    margin: 1rem;
+    width: 32%;
+    margin: 1rem auto;
     border: 1px solid black;
   }
 
@@ -216,12 +215,11 @@ export default {
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    width: 425px;
-    height: 425px;
+    width: 30%;
 
     .cercle {
       position: relative;
-      top: 12rem;
+      top: 13rem;
       left: 8rem;
       width: 60px;
       height: 60px;
@@ -318,8 +316,7 @@ export default {
   }
 
   .description-principal {
-    width: 425px;
-    height: 425px;
+    width: 30%;
     border: 1px solid black;
     margin-left: 2rem;
     padding: 1rem;
@@ -388,9 +385,7 @@ export default {
 
   .Payment-card {
     border: 1px solid #e1e1e1;
-    width: 273px;
-    height: 425px;
-    margin-left: 4rem;
+    margin-left: 3rem;
     padding: 1rem;
 
     .payement-price {
@@ -434,8 +429,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-content: center;
-      margin-top: 1rem;
+      margin: 1rem auto;
 
       .add-cart {
         padding: 0.5rem;

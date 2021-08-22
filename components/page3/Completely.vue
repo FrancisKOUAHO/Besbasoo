@@ -48,10 +48,8 @@ export default {
 
 <style lang="scss">
 .slider-completely {
-  margin: 1rem;
-  width: 1403px;
-  height: 473px;
-  padding: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
   font-family: Rambla, serif;
 
   h1 {

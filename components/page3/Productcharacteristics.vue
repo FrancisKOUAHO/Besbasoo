@@ -37,10 +37,8 @@ export default {
 
 <style lang="scss">
 .Product-characteristics {
-  width: 1350px;
-  height: 387px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 95%;
+  margin: auto;
   padding: 1rem;
   font-family: Rambla, serif;
 
