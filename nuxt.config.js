@@ -28,8 +28,13 @@ export default {
   plugins: [
   ],
 
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    '@nuxtjs/axios',
+  ],
+
   axios: {
-    baseURL: 'http://localhost:4000/api'
+    baseURL: 'http://apibesbasoo-env.eba-fwfyxu55.eu-west-2.elasticbeanstalk.com/'
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,10 +44,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

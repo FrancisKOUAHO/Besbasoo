@@ -12,12 +12,11 @@
             <h1 class="text-center mobile-text-color besbasoo">Besbasoo</h1>
           </nuxt-link>
           <br/>
-          <h2 class="text-left  mt-1.5 mobile-text-color vous-e-n">Connexion<br/></h2>
+          <h2 class="text-left  mt-1.5 mobile-text-color vous-e-n">S'identifier<br/></h2>
           <div class="mt-3">
           <span class="text-black text-left font-medium mobile-text-color"
                 style="font-family: Rambla;font-size: 18px;font-style: normal;font-weight: 400;line-height: 22px;letter-spacing: 0em;text-align: left;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus <br/>
-            leo quam, vel euismod erat imperdiet vitae.
+            Adresse e-mail ou numéro de téléphone portable
           </span>
           </div>
         </div>
@@ -144,6 +143,7 @@ module.exports = {
     return {
       show: true,
       cshow: true,
+      posts: [],
     }
   },
   head() {
