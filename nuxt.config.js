@@ -1,14 +1,7 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
-  target: 'static',
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Besbasoo',
-    htmlAttrs: {
-      lang: 'fr'
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -28,15 +21,6 @@ export default {
   plugins: [
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/axios',
-  ],
-
-  axios: {
-    baseURL: 'http://apibesbasoo-env.eba-fwfyxu55.eu-west-2.elasticbeanstalk.com/'
-  },
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -45,6 +29,24 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+  ],
+
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {},
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'fr'
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
