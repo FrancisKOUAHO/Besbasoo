@@ -20,39 +20,43 @@
           </span>
           </div>
         </div>
-        <div class="flex flex-col  px-8 space-y-5 bg-gray-275">
+        <form @submit.prevent="register">
+          <div class="flex flex-col  px-8 space-y-5 bg-gray-275">
 
 
-          <div class="flex flex-wrap items-stretch w-full relative h-15 bg-white items-center rounded pr-10">
-            <div class="flex -mr-px justify-center w-12 p-4">
+            <div class="flex flex-wrap items-stretch w-full relative h-15 bg-white items-center rounded pr-10">
+              <div class="flex -mr-px justify-center w-12 p-4">
                 <span
                   class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
                   <i class="fal fa-envelope"></i>
                 </span>
+              </div>
+              <input
+                type="email"
+                v-model="signUp.email"
+                class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
+                placeholder="Address e-mail"
+              />
+
             </div>
-            <input
-              type="email"
-              class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
-              placeholder="Address e-mail"
-            />
-
-          </div>
 
 
-          <div class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10">
-            <div class="flex -mr-px justify-center w-12 p-4">
+            <div
+              class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10">
+              <div class="flex -mr-px justify-center w-12 p-4">
               <span
                 class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600"
               >
                 <i class="fal fa-lock-alt"></i>
               </span>
-            </div>
-            <input
-              :type="show ? 'password' : 'text'"
-              class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
-              placeholder="Mot de passe"
-            />
-            <div class="flex -mr-px justify-center w-12 p-4">
+              </div>
+              <input
+                :type="show ? 'password' : 'text'"
+                v-model="signUp.password"
+                class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
+                placeholder="Mot de passe"
+              />
+              <div class="flex -mr-px justify-center w-12 p-4">
 
 
                   <span @click="show = !show" :class="{'hidden': !show, 'block':show }"
@@ -60,90 +64,53 @@
                     <i class="fas fa-eye"></i>
 
                  </span>
-              <span @click="show = !show" :class="{'block': !show, 'hidden':show }"
-                    class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
+                <span @click="show = !show" :class="{'block': !show, 'hidden':show }"
+                      class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
                     <i class="fas fa-eye-slash"></i>
-
                  </span>
-
-
+              </div>
             </div>
-
-          </div>
-
-          <div class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10">
-            <div class="flex -mr-px justify-center w-12 p-4">
-              <span
-                class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
-                <i class="fal fa-lock-alt"></i>
-              </span>
-
-            </div>
-
-            <input
-              :type="cshow ? 'password' : 'text'"
-              class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
-              placeholder="Confirmer votre mot de passe"
-            />
-            <div class="flex -mr-px justify-center w-12 p-4">
-               <span @click="cshow = !cshow" :class="{'hidden': !cshow, 'block':cshow }"
-                     class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
-                    <i class="fas fa-eye"></i>
-
-                 </span>
-              <span @click="cshow = !cshow" :class="{'block': !cshow, 'hidden':cshow }"
-                    class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
-                    <i class="fas fa-eye-slash"></i>
-
-                </span>
-
-            </div>
-          </div>
-
-          <button
-            class="w-full py-3 bg-yellow-500 text-white rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent shadow-lg mobile-text-color  creer-m-c">
-            Créer mon compte
-          </button>
-          <hr class="border-divider"
-              style="margin: 20px auto 0;width:50%; border: 1px solid #787878; border-radius: 5px; "/>
-
-
-          <h2
-            style="font-family: Rambla,serif;font-style: normal;font-weight: bold;font-size: 30px;line-height: 37px;color: #101829;"
-            class="text-black text-lg text-left font-weight-bold mobile-text-color">Déjà membre? </h2>
-          <nuxt-link :to="{name: 'signIn'}">
             <button
-              class="border-2 border-gray-600 w-full py-3 bg-gray text-black rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-white-500 focus:border-transparent shadow-lg mobile-text-color se-conn">
-              Se connecter
+              type="submit"
+              class="w-full py-3 bg-yellow-500 text-white rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent shadow-lg mobile-text-color  creer-m-c">
+              Créer mon compte
             </button>
-          </nuxt-link>
-          <span class="text-black text-left mobile-text-color mobile-text-color"
-                style="font-family: Rambla;font-style: normal;font-weight: normal;font-size: 15px;line-height: 18px;">
+            <hr class="border-divider"
+                style="margin: 20px auto 0;width:50%; border: 1px solid #787878; border-radius: 5px; "/>
+
+
+            <h2
+              style="font-family: Rambla,serif;font-style: normal;font-weight: bold;font-size: 30px;line-height: 37px;color: #101829;"
+              class="text-black text-lg text-left font-weight-bold mobile-text-color">Déjà membre? </h2>
+            <nuxt-link :to="{name: 'signIn'}">
+              <button
+                class="border-2 border-gray-600 w-full py-3 bg-gray text-black rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-white-500 focus:border-transparent shadow-lg mobile-text-color se-conn">
+                Se connecter
+              </button>
+            </nuxt-link>
+            <span class="text-black text-left mobile-text-color mobile-text-color"
+                  style="font-family: Rambla;font-style: normal;font-weight: normal;font-size: 15px;line-height: 18px;">
         Vous souhaitez en savoir plus sur la gestion de vos données personnelles ? Consultez la<br> politique de confidentialité accessible depuis le tien suivant :<a
-            class="mobile-text-color" style="text-decoration: underline;" href="#"> Protection de la vie privée </a>
+              class="mobile-text-color" style="text-decoration: underline;" href="#"> Protection de la vie privée </a>
       </span>
 
-          <!--          <div class="flex justify-center">
-                      <img class="mt-11 desktop-view" src="logo-1.png" width="65px" style="object-fit: cover;" alt="logo">
-                      <img class="mt-11 mobile-logo mb-10" src="~/assets/images/logo-2.png" width="65px"
-                           style="object-fit: cover;" alt="logo">
-                    </div>-->
-          <!-- desktop footer -->
-          <div class="flex flex-wrap justify-between desktop-view footer-text-color">
-            <div><a href=""> Protection de <br/> La vie privé</a></div>
-            <div><a href="">Conditions générales <br/> de vente</a></div>
-            <div><a href="">Conditions d'adhésion au <br/> programme Marketplace</a></div>
-            <div><a href="">Mentions <br/>légales</a></div>
-            <div class="py-4"><a href="">Cookies</a></div>
-          </div>
-          <div class="flex justify-between footer-text-color desktop-view ">
-            <div></div>
-            <div> @2021, Besbasoo.com, Inc. ou ses filiales</div>
-            <div></div>
-          </div>
-          <!-- desktop footer end -->
+            <!-- desktop footer -->
+            <div class="flex flex-wrap justify-between desktop-view footer-text-color">
+              <div><a href=""> Protection de <br/> La vie privé</a></div>
+              <div><a href="">Conditions générales <br/> de vente</a></div>
+              <div><a href="">Conditions d'adhésion au <br/> programme Marketplace</a></div>
+              <div><a href="">Mentions <br/>légales</a></div>
+              <div class="py-4"><a href="">Cookies</a></div>
+            </div>
+            <div class="flex justify-between footer-text-color desktop-view ">
+              <div></div>
+              <div> @2021, Besbasoo.com, Inc. ou ses filiales</div>
+              <div></div>
+            </div>
+            <!-- desktop footer end -->
 
-        </div>
+          </div>
+        </form>
       </div>
 
     </div>
@@ -167,12 +134,26 @@
   </div>
 </template>
 <script>
-module.exports = {
+import axios from "axios";
+import env from "../config/env";
+
+export default {
   layout: 'nothing',
   data: function () {
     return {
       show: true,
       cshow: true,
+      signUp: {
+        email: "",
+        password: "",
+      }
+    }
+  },
+  methods: {
+    async register() {
+      let registerUser = await axios.post(`${env.BaseURL}users/signup`, this.signUp);
+      console.log(registerUser)
+      await this.$router.push({name: 'validateCode'});
     }
   },
   head() {

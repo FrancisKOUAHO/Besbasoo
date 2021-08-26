@@ -39,7 +39,10 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+     BaseURL: 'https://apibesbasoo.herokuapp.com/'
+  },
+
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
