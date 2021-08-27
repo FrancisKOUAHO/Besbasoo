@@ -12,11 +12,12 @@
         </router-link>
       </div>
       <nav class="text-white text-base font-semibold pt-3">
-        <router-link to="#" class="flex items-center active-nav-link text-white py-4 pl-6 nav-item">
+        <router-link :to="{name: 'admin-dashboard'}" 
+        class="flex items-center active-nav-link text-white py-4 pl-6 nav-item">
           <i class="fas fa-tachometer-alt mr-3"></i>
           Tableau de bord
         </router-link>
-        <router-link to="#"
+        <router-link :to="{name: 'admin-products'}"
                      class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
           <i class="fas fa-sticky-note mr-3"></i>
           Produits
@@ -36,7 +37,7 @@
           <i class="fas fa-sticky-note mr-3"></i>
           Clients
         </router-link>
-        <router-link to="#"
+        <router-link :to="{name: 'admin-seller'}"
                      class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
           <i class="fas fa-table mr-3"></i>
           Vendeurs
@@ -81,8 +82,8 @@
 
       <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
-          <h1 class="text-3xl text-black pb-6">Tableau de bord
-          </h1>
+          <!-- <h1 class="text-3xl text-black pb-6">{{titlePage}}
+          </h1> -->
           <nuxt/>
         </main>
       </div>
@@ -93,6 +94,7 @@
 <script>
 export default {
   name: "admin",
+  props: ['titlePage'],
   data() {
     return {
       isOpen1: false,
