@@ -133,12 +133,9 @@
   </div>
 </template>
 <script>
-import axios from "axios";
-import env from '../config/env';
-
 export default {
   layout: 'nothing',
-  data: function () {
+  data() {
     return {
       show: true,
       cshow: true,

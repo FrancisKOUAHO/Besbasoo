@@ -33,7 +33,7 @@
               </div>
               <input
                 type="email"
-                v-model="signUp.email"
+                v-model="email"
                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
                 placeholder="Address e-mail"
               />
@@ -52,7 +52,7 @@
               </div>
               <input
                 :type="show ? 'password' : 'text'"
-                v-model="signUp.password"
+                v-model="password"
                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
                 placeholder="Mot de passe"
               />
@@ -133,27 +133,18 @@
 
   </div>
 </template>
+
 <script>
 import axios from "axios";
-import env from "../config/env";
 
 export default {
   layout: 'nothing',
-  data: function () {
+  data() {
     return {
       show: true,
       cshow: true,
-      signUp: {
-        email: "",
-        password: "",
-      }
-    }
-  },
-  methods: {
-    async register() {
-      let registerUser = await axios.post(`${env.BaseURL}users/signup`, this.signUp);
-      console.log(registerUser)
-      await this.$router.push({name: 'validateCode'});
+      email: "",
+      password: "",
     }
   },
   head() {
@@ -167,7 +158,17 @@ export default {
         }
       ]
     }
-  }
+  },
+  methods: {
+    async register() {
+      const data = {
+        email: this.email,
+        password: this.password,
+      };
+      let response = await axios.post("https://apibesbasoo.herokuapp.com/users/signup", data);
+      console.log(response)
+    }
+  },
 }
 </script>
 <style scoped>

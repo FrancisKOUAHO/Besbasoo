@@ -40,7 +40,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-     BaseURL: 'https://apibesbasoo.herokuapp.com/'
+     baseURL: 'https://apibesbasoo.herokuapp.com/'
   },
 
 

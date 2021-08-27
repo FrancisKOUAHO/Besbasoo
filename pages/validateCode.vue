@@ -30,31 +30,14 @@
 </template>
 
 <script>
-import axios from "axios";
-import env from "@/config/env";
-
 export default {
   name: "validateCode",
   layout: 'nothing',
-  data: function () {
+  data() {
     return {
-      succes: "",
-      error: "",
       activateAccountCodeEmail: {
         email: "",
         code: "",
-      }
-    }
-  },
-  methods: {
-    async activate() {
-      try {
-        let activateAccount = await axios.patch(`${env.BaseURL}users/activate`, this.activateAccountCodeEmail);
-        console.log(activateAccount)
-        this.succes = this.activateAccountCodeEmail.success
-        await this.$router.push({name: 'index'});
-      } catch (e) {
-        this.error = this.activateAccountCodeEmail.success
       }
     }
   },
@@ -69,7 +52,9 @@ export default {
         }
       ]
     }
-  }
+  },
+  methods: {
+  },
 }
 </script>
 
