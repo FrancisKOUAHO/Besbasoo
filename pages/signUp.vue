@@ -166,7 +166,7 @@ export default {
         password: this.password,
       };
       let response = await axios.post("https://apibesbasoo.herokuapp.com/users/signup", data);
-      this.$router.push('/validateCode');
+      await this.$router.push('/validateCode');
     }
   },
 }

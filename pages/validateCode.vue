@@ -9,13 +9,13 @@
         <div class="input_wrap">
           <label for="input_text">Veuillez saissir votre email</label>
           <div class="input_field">
-            <input v-model="activateAccountCodeEmail.email" type="text" class="input" id="input_text">
+            <input v-model="email" type="text" class="input" id="input_text">
           </div>
         </div>
         <div class="input_wrap">
           <label for="input_password">Veuillez saissir votre code de confirmation</label>
           <div class="input_field">
-            <input v-model="activateAccountCodeEmail.code" type="password" class="input" id="input_password">
+            <input v-model="code" type="password" class="input" id="input_password">
           </div>
         </div>
         <div class="input_wrap">
@@ -30,15 +30,15 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "validateCode",
   layout: 'nothing',
   data() {
     return {
-      activateAccountCodeEmail: {
-        email: "",
-        code: "",
-      }
+      email: "",
+      code: ""
     }
   },
   head() {
@@ -54,6 +54,14 @@ export default {
     }
   },
   methods: {
+    async activate() {
+      const data = {
+        email: this.email,
+        code: this.code
+      };
+      let response = await axios.post("https://apibesbasoo.herokuapp.com/activate", data);
+      await this.$router.push('/');
+    }
   },
 }
 </script>
