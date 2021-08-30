@@ -33,7 +33,7 @@
                 type="email"
                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
                 placeholder="Address e-mail"
-                v-model="singIn.email"
+                v-model="email"
                 required
               />
             </div>
@@ -50,7 +50,7 @@
                 :type="show ? 'password' : 'text'"
                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
                 placeholder="Mot de passe"
-                v-model="singIn.password"
+                v-model="password"
                 required
               />
               <div class="flex -mr-px justify-center w-12 p-4">
@@ -133,6 +133,8 @@
   </div>
 </template>
 <script>
+import axios from "axios"
+import env from '../config/env'
 export default {
   layout: 'nothing',
   data() {
@@ -141,24 +143,25 @@ export default {
       cshow: true,
       success: false,
       error: false,
-      singIn: {
-        email: "",
-        password: "",
-      }
+      email: "",
+      password: "",
     }
   },
   methods: {
     async loadSignIn() {
       try{
-        let createUser = await axios.post(`${env.BaseURL}users/signin`, this.singIn);
+        const data = {
+          email: this.email,
+          password: this.password,
+        };
+        let createUser = await axios.post(`${env.BaseURL}users/signin`, data);
         this.reset();
         this.success = true;
-        let token = createUser.data.token;
+        let token = createUser.data.accessToken;
         localStorage.setItem("jwt", token);
         if (token) {
-          await this.$router.push({name: '/'});
+          await this.$router.push({name: 'index'});
         }
-        console.log(createUser)
       }catch (err) {
         this.error = true;
         console.log("Quelque chose a mal tourné")
@@ -167,8 +170,8 @@ export default {
     reset() {
       this.success = false;
       this.error = false;
-      for (let field in this.singIn) {
-        this.singIn[field] = null;
+      for (let field in this.data) {
+        this.data[field] = null;
       }
     }
   },

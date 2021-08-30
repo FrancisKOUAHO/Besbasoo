@@ -135,7 +135,8 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from "axios"
+import env from '../config/env'
 
 export default {
   layout: 'nothing',
@@ -165,7 +166,7 @@ export default {
         email: this.email,
         password: this.password,
       };
-      let response = await axios.post("https://apibesbasoo.herokuapp.com/users/signup", data);
+      let response = await axios.post(`${env.BaseURL}/users/signup`, data);
       await this.$router.push('/validateCode');
     }
   },
