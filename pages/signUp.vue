@@ -166,7 +166,7 @@ export default {
         password: this.password,
       };
       let response = await axios.post("https://apibesbasoo.herokuapp.com/users/signup", data);
-      console.log(response)
+      this.$router.push('/validateCode');
     }
   },
 }
@@ -265,6 +265,4 @@ export default {
   line-height: 22px;
   color: #101829;
 }
-
-
 </style>
