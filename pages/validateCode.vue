@@ -15,7 +15,7 @@
         <div class="input_wrap">
           <label for="input_password">Veuillez saissir votre code de confirmation</label>
           <div class="input_field">
-            <input v-model="code" type="password" class="input" id="input_password">
+            <input v-model="code" type="text" class="input" id="input_password">
           </div>
         </div>
         <div class="input_wrap">
@@ -59,7 +59,7 @@ export default {
         email: this.email,
         code: this.code
       };
-      let response = await axios.post("https://apibesbasoo.herokuapp.com/activate", data);
+      let response = await axios.patch("https://apibesbasoo.herokuapp.com/users/activate", data);
       await this.$router.push('/');
     }
   },
