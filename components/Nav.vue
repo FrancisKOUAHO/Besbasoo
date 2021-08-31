@@ -15,7 +15,7 @@
           </svg>
         </button>
       </div>
-      <nuxt-link :to="{name: 'index'}">
+      <nuxt-link :to="{path: '/'}">
         <div class="   text-white-500 ml-4  sm:ml-8  font-rambla  ">
           <span class="font-bold text-3xl  text-white">Besbasoo</span>
         </div>
