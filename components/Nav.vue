@@ -50,7 +50,7 @@
               <div class="" v-if="user">
                 <div class="dropdown inline-block relative">
                   <button class="text-white font-semibold py-2 px-4 rounded inline-flex items-center">
-                    <span class="mr-1" style="font-size: 1rem">Compte</span>
+                    <span class="mr-1" style="font-size: 1rem">{{user.username}}</span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                   </button>
                   <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
@@ -60,7 +60,7 @@
                   </ul>
                 </div>
               </div>
-              <p  v-if="!user" class="text-xs font-medium ml-2 text-white">
+              <p v-if="!user" class="text-xs font-medium ml-2 text-white">
                 <nuxt-link :to="{name: 'signIn'}">
                   Identifiez-vous
                 </nuxt-link>
@@ -172,20 +172,16 @@ export default {
       user: {}
     }
   },
-  methods: {
-    getUserDetails() {
-      let token = localStorage.getItem("jwt");
-      let decoded = VueJwtDecode.decode(token);
-      this.user = decoded;
-    },
-    logUserOut() {
-      localStorage.removeItem("jwt");
-      this.$router.push("/");
-    }
+  async created () {
+    let response = await axios.get(`${env.BaseURL}users/me`, {
+      headers: {
+        Authorization: 'Bearer ' + localStorage.getItem('accessToken')
+      }
+    });
+    this.user = response.data;
+    console.log(this.user)
   },
-  created() {
-    this.getUserDetails();
-  }
+
 }
 </script>
 
