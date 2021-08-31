@@ -82,7 +82,7 @@
             <h2
               style="font-family: Rambla,serif;font-style: normal;font-weight: bold;font-size: 30px;line-height: 37px;color: #101829;"
               class="text-black text-lg text-left font-weight-bold mobile-text-color">Déjà membre? </h2>
-            <nuxt-link :to="{name: 'signIn'}">
+            <nuxt-link :to="{name: 'signin'}">
               <button
                 class="border-2 border-gray-600 w-full py-3 bg-gray text-black rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-white-500 focus:border-transparent shadow-lg mobile-text-color se-conn">
                 Se connecter

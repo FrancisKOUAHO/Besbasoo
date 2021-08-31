@@ -18,7 +18,7 @@ export default {
 <style scoped>
 
 .not-found {
-  height: 49rem;
+  height: 100vh;
   background-color: #11499c;
   color: #fff;
   font-size: 100%;

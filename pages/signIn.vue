@@ -159,6 +159,7 @@ export default {
         this.success = true;
         let token = createUser.data.accessToken;
         localStorage.setItem("jwt", token);
+        console.log(createUser)
         if (token) {
           await this.$router.push({name: 'index'});
         }

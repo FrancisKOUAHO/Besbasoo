@@ -16,6 +16,7 @@
     "core-js": "^3.15.1",
     "dotenv": "^10.0.0",
     "nuxt": "^2.15.7",
+    "vue-jwt-decode": "^0.1.0",
     "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
