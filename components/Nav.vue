@@ -172,13 +172,15 @@ export default {
       user: null
     }
   },
-  async create() {
-    let response = await axios.get(`${env.BaseURL}/users/profile`, {
+  create() {
+    let response = axios.get(`${env.BaseURL}/users/profile`, {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('accessToken')
       }
     });
     this.user = response.data;
+    console.log(this.user)
+    console.log(response)
   },
   methods: {
     handleClick(){
