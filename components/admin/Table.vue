@@ -12,6 +12,7 @@
                                 <th class="py-3 px-6 text-center">Prix de la commande</th>
                                 <th class="py-3 px-6 text-center">Statut</th>
                                 <th class="py-3 px-6 text-center">Actions</th>
+                                <!-- <th class="py-3 px-6 text-center">Visualisation</th> -->
                             </tr>
                         </thead>
                         <tbody class="text-gray-600 text-sm font-light">
@@ -38,6 +39,13 @@
                                 </td>
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
+                                </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
                                 </td>
                             </tr>
 
@@ -66,6 +74,13 @@
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
                                 </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
+                                </td>
                             </tr>
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
@@ -90,6 +105,13 @@
                                 </td>
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
+                                </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
@@ -116,6 +138,13 @@
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
                                 </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
+                                </td>
                             </tr>
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
@@ -140,6 +169,13 @@
                                 </td>
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
+                                </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
@@ -166,6 +202,13 @@
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
                                 </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
+                                </td>
                             </tr>
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
@@ -191,6 +234,13 @@
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
                                 </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
+                                </td>
                             </tr>
                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                 <td class="py-3 px-6 text-left whitespace-nowrap">
@@ -215,6 +265,13 @@
                                 </td>
                                 <td class="py-3 px-6 text-center flex justify-center">
                                     <img class="w-8 h-8 rounded-full" src="@/assets/images/icon-etc.png">
+                                </td>
+                                <td class="py-3 px-6 text-center">
+                                    <router-link :to="{name: 'admin-orderDetail'}">
+                                        <button class="font-bold rounded-md border px-4 py-1">
+                                            Consulter
+                                        </button>
+                                    </router-link>
                                 </td>
                             </tr>
                         </tbody>
