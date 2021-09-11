@@ -50,13 +50,13 @@
               <div>
                 <div class="dropdown inline-block relative">
                   <button class="text-white font-semibold py-2 px-4 rounded inline-flex items-center">
-                    <span class="mr-1" style="font-size: 1rem">{{user.first_name}} <span class="transform-maj">{{user.last_name}}</span></span>
+                    <span class="mr-1" style="font-size: 1rem">{{user.data.first_name}} <span class="transform-maj">{{user.data.last_name}}</span></span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                   </button>
                   <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
                     <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
-                    <li class=""><p class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Se deconnecter</p></li>
+                    <li class=""><a href="javascript:void(0)" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" @click="logout">Se deconnecter</a></li>
                   </ul>
                 </div>
               </div>
@@ -175,6 +175,27 @@ export default {
       user: null
     }
   },
+  async created() {
+    if (process.client){
+      let getUser = await axios.get(`${env.BaseURL}users/me`,{
+        headers: {
+          Authorization: 'Bearer ' + localStorage.getItem('accesToken')
+        }
+
+      });
+      this.user = getUser.data
+    }
+  },
+  methods: {
+    logout(){
+      if (process.client){
+        let logout = localStorage.removeItem('accesToken')
+        this.$route.path('/')
+        console.log("Click pour déco")
+        console.log(logout)
+      }
+    }
+  }
 }
 </script>
 
@@ -184,6 +205,6 @@ export default {
 }
 
 .transform-maj{
-  text-transform: uppercase ;
+  text-transform: uppercase;
 }
 </style>

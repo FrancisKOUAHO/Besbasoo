@@ -160,6 +160,8 @@ export default {
         this.success = true;
         let token = createUser.data.accessToken;
         localStorage.setItem("accessToken", token);
+        let roleUser = createUser
+        console.log(roleUser)
         if (token) {
           await this.$router.push({name: 'index'});
         }
