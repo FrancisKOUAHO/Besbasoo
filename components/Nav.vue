@@ -46,7 +46,7 @@
                   style="background-color:orange"></span>
              </span>
 
-            <div v-if="user" class=" hidden sm:block">
+            <div v-if="user" class="hidden sm:block">
               <div>
                 <div class="dropdown inline-block relative">
                   <button class="text-white font-semibold py-2 px-4 rounded inline-flex items-center">
@@ -61,7 +61,7 @@
                 </div>
               </div>
             </div>
-            <div v-else class=" hidden sm:block ">
+            <div v-if="!user" class=" hidden sm:block ">
               <p class="text-xs font-medium ml-2 text-white">
                 <nuxt-link :to="{name: 'signIn'}">
                   Identifiez-vous
@@ -172,13 +172,8 @@ import VueJwtDecode from "vue-jwt-decode";
 export default {
   data() {
     return {
-      user: {}
+      user: null
     }
-  },
-  async created () {
-    let token = localStorage.getItem("accessToken");
-    let decoded = VueJwtDecode.decode(token);
-    this.user = decoded;
   },
 }
 </script>
