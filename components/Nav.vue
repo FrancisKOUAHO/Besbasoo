@@ -46,21 +46,23 @@
                   style="background-color:orange"></span>
              </span>
 
-            <div class=" hidden sm:block ">
-              <div class="" v-if="user">
+            <div v-if="user" class=" hidden sm:block">
+              <div>
                 <div class="dropdown inline-block relative">
                   <button class="text-white font-semibold py-2 px-4 rounded inline-flex items-center">
-                    <span class="mr-1" style="font-size: 1rem">{{user.username}}</span>
+                    <span class="mr-1" style="font-size: 1rem">{{user.first_name}} <span class="transform-maj">{{user.last_name}}</span></span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                   </button>
                   <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
                     <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
                     <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
-                    <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="javascript:void(0)" @click="handleClick">Se deconnecter</a></li>
+                    <li class=""><p class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Se deconnecter</p></li>
                   </ul>
                 </div>
               </div>
-              <p v-if="!user" class="text-xs font-medium ml-2 text-white">
+            </div>
+            <div v-else class=" hidden sm:block ">
+              <p class="text-xs font-medium ml-2 text-white">
                 <nuxt-link :to="{name: 'signIn'}">
                   Identifiez-vous
                 </nuxt-link>
@@ -165,6 +167,7 @@
 <script>
 import axios from "axios"
 import env from '../config/env'
+import VueJwtDecode from "vue-jwt-decode";
 
 export default {
   data() {
@@ -173,20 +176,19 @@ export default {
     }
   },
   async created () {
-    let response = await axios.get(`${env.BaseURL}users/me`, {
-      headers: {
-        Authorization: 'Bearer ' + localStorage.getItem('accessToken')
-      }
-    });
-    this.user = response.data;
-    console.log(this.user)
+    let token = localStorage.getItem("accessToken");
+    let decoded = VueJwtDecode.decode(token);
+    this.user = decoded;
   },
-
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.transform-maj{
+  text-transform: uppercase ;
 }
 </style>

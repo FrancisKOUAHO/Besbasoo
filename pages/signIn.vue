@@ -135,6 +135,7 @@
 <script>
 import axios from "axios"
 import env from '../config/env'
+
 export default {
   layout: 'nothing',
   data() {
@@ -149,7 +150,7 @@ export default {
   },
   methods: {
     async loadSignIn() {
-      try{
+      try {
         const data = {
           email: this.email,
           password: this.password,
@@ -158,12 +159,11 @@ export default {
         this.reset();
         this.success = true;
         let token = createUser.data.accessToken;
-        localStorage.setItem("jwt", token);
-        console.log(createUser)
+        localStorage.setItem("accessToken", token);
         if (token) {
           await this.$router.push({name: 'index'});
         }
-      }catch (err) {
+      } catch (err) {
         this.error = true;
       }
     },
