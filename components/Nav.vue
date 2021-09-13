@@ -63,7 +63,7 @@
             </div>
             <div v-if="!user" class=" hidden sm:block ">
               <p class="text-xs font-medium ml-2 text-white">
-                <nuxt-link :to="{name: 'signIn'}">
+                <nuxt-link :to="{name: 'login'}">
                   Identifiez-vous
                 </nuxt-link>
               </p>
@@ -175,7 +175,7 @@ export default {
       user: null
     }
   },
-  async created() {
+/*  async created() {
     if (process.client){
       let getUser = await axios.get(`${env.BaseURL}users/me`,{
         headers: {
@@ -195,7 +195,7 @@ export default {
         console.log(logout)
       }
     }
-  }
+  }*/
 }
 </script>
 

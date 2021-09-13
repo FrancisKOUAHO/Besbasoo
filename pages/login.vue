@@ -155,27 +155,12 @@ export default {
           email: this.email,
           password: this.password,
         };
-        let createUser = await axios.post(`${env.BaseURL}users/signin`, data);
-        this.reset();
-        this.success = true;
-        let token = createUser.data.accessToken;
-        localStorage.setItem("accessToken", token);
-        let roleUser = createUser
-        console.log(roleUser)
-        if (token) {
-          await this.$router.push({name: 'index'});
-        }
+        let createUser = await axios.post(`${env.BaseURL}login`, data);
+        console.log(createUser)
       } catch (err) {
         this.error = true;
       }
     },
-    reset() {
-      this.success = false;
-      this.error = false;
-      for (let field in this.data) {
-        this.data[field] = null;
-      }
-    }
   },
   head() {
     return {

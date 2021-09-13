@@ -166,8 +166,9 @@ export default {
         email: this.email,
         password: this.password,
       };
-      let response = await axios.post(`${env.BaseURL}/users/signup`, data);
-      await this.$router.push('/validateCode');
+      let response = await axios.post(`${env.BaseURL}signup`, data);
+      console.log(response)
+      await this.$router.push({name: 'login'});
     }
   },
 }

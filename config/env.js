@@ -1,3 +1,3 @@
 export default {
-  BaseURL: "https://apibesbasoo.herokuapp.com/"
+  BaseURL: "http://localhost:5000/"
 }
