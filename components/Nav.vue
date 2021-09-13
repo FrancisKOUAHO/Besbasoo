@@ -50,7 +50,7 @@
               <div>
                 <div class="dropdown inline-block relative">
                   <button class="text-white font-semibold py-2 px-4 rounded inline-flex items-center">
-                    <span class="mr-1" style="font-size: 1rem">{{user.data.first_name}} <span class="transform-maj">{{user.data.last_name}}</span></span>
+                    <span class="mr-1" style="font-size: 1rem">{{user}} <span class="transform-maj">{{user}}</span></span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                   </button>
                   <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
@@ -167,7 +167,6 @@
 <script>
 import axios from "axios"
 import env from '../config/env'
-import VueJwtDecode from "vue-jwt-decode";
 
 export default {
   data() {
@@ -175,27 +174,6 @@ export default {
       user: null
     }
   },
-/*  async created() {
-    if (process.client){
-      let getUser = await axios.get(`${env.BaseURL}users/me`,{
-        headers: {
-          Authorization: 'Bearer ' + localStorage.getItem('accesToken')
-        }
-
-      });
-      this.user = getUser.data
-    }
-  },
-  methods: {
-    logout(){
-      if (process.client){
-        let logout = localStorage.removeItem('accesToken')
-        this.$route.path('/')
-        console.log("Click pour déco")
-        console.log(logout)
-      }
-    }
-  }*/
 }
 </script>
 

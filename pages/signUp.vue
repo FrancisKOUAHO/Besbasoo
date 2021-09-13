@@ -20,7 +20,7 @@
           </span>
           </div>
         </div>
-        <form @submit.prevent="register">
+        <form @submit.prevent="handleRegister">
           <div class="flex flex-col  px-8 space-y-5 bg-gray-275">
 
 
@@ -158,17 +158,6 @@ export default {
           content: 'Ma description personnalisée'
         }
       ]
-    }
-  },
-  methods: {
-    async register() {
-      const data = {
-        email: this.email,
-        password: this.password,
-      };
-      let response = await axios.post(`${env.BaseURL}signup`, data);
-      console.log(response)
-      await this.$router.push({name: 'login'});
     }
   },
 }

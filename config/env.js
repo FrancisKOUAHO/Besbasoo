@@ -1,3 +1,3 @@
 export default {
-  BaseURL: "http://localhost:5000/"
+  BaseURL: "localhost:8080/"
 }

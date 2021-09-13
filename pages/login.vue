@@ -20,7 +20,7 @@
           </span>
           </div>
         </div>
-        <form @submit.prevent="loadSignIn">
+        <form @submit.prevent="handleLogin">
           <div class="flex flex-col  px-8 space-y-5 bg-gray-275">
             <div class="flex flex-wrap items-stretch w-full relative h-15 bg-white items-center rounded pr-10">
               <div class="flex -mr-px justify-center w-12 p-4">
@@ -147,20 +147,6 @@ export default {
       email: "",
       password: "",
     }
-  },
-  methods: {
-    async loadSignIn() {
-      try {
-        const data = {
-          email: this.email,
-          password: this.password,
-        };
-        let createUser = await axios.post(`${env.BaseURL}login`, data);
-        console.log(createUser)
-      } catch (err) {
-        this.error = true;
-      }
-    },
   },
   head() {
     return {
